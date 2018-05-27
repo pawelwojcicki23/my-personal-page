@@ -16,7 +16,7 @@ body {
   height: 10vh;
   position: fixed;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.95;
   z-index: 99; }
 
 .nav-item a {
@@ -54,7 +54,7 @@ header img {
 
 .bg2 {
   background-color: #fff;
-  background-image: url("bg2.jpg"); }
+  background-image: url("../images/bg2.jpg"); }
 
 .bg3 {
   background-color: #fff;
@@ -66,7 +66,8 @@ header img {
 
 .content {
   color: #fff;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
@@ -74,13 +75,17 @@ header img {
   text-shadow: 0 0 20px #000;
   font-size: 1.8em; }
 
-.effect {
+.display-bg1 {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
-  background-color: #0085cb;
-  opacity: 0.75;
-  z-index: -1; }
+  align-items: center; }
+
+.display-bg1 h2 {
+  color: red; }
+
+.display-bg1 p {
+  font-size: 2em;
+  padding-left: 10%;
+  padding-right: 10%; }
