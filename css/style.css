@@ -20,7 +20,11 @@
   background-image: url("../images/bg1.jpg"); }
 
 .bg2 {
-  background-color: brown; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url("../images/bg2.jpg"); }
 
 .bg3 {
   background-color: white; }
@@ -34,10 +38,12 @@
 
 .navbar-effect a {
   padding-top: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 .navbar-effect a:hover {
   border-top: 3px solid red;
+  text-decoration: none;
   color: black; }
 
 .control {
@@ -78,4 +84,80 @@
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 5px;
-  box-shadow: 0px 0px 10px #000000; }
+  box-shadow: 0px 0px 10px #000000;
+  overflow: auto; }
+
+.profess {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh; }
+
+.profess p {
+  margin-bottom: 0;
+  margin-left: 1vw;
+  font-family: 'Old Standard TT', serif;
+  font-size: 2em;
+  color: #202020; }
+
+.profess p:hover {
+  text-shadow: 0px 0px 10px #000000; }
+
+.quote {
+  padding-top: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+  font-size: 1.5em;
+  color: #ff0056; }
+
+.mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.slide {
+  width: 85vw;
+  height: 70vh; }
+
+.carousel-item img {
+  width: 50vw !important;
+  margin: auto; }
+
+@media screen and (max-width: 1200px) {
+  .profess p {
+    font-size: 1.5em; }
+  .quote {
+    font-size: 1.5em; }
+  .welcome-text h1 {
+    font-size: 2.5em; }
+  .welcome-text p {
+    font-size: 1.5em;
+    text-align: center; } }
+
+@media screen and (max-width: 992px) {
+  .profess p {
+    font-size: 1em; }
+  .quote {
+    font-size: 1em; }
+  .welcome-text h1 {
+    font-size: 2em; }
+  .welcome-text p {
+    font-size: 1em;
+    text-align: center; } }
+
+@media screen and (max-width: 640px) {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto; }
+  .welcome-text h1 {
+    margin-top: 5vh;
+    margin-bottom: 0; }
+  .welcome-text p {
+    margin-bottom: -10vh; }
+  .frame {
+    width: 75vw; } }
