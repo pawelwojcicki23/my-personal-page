@@ -130,6 +130,17 @@
   position: absolute;
   z-index: 3; }
 
+.about-frame {
+  width: 50vw;
+  height: 50vh;
+  background-color: white; }
+
+.about-frame img {
+  width: 150px;
+  height: 150px;
+  padding: 2%;
+  filter: drop-shadow(5px 5px 5px #222); }
+
 .undercover {
   display: flex;
   flex-direction: column;
@@ -189,6 +200,18 @@ p a {
   text-align: center;
   font-size: 1.25em; }
 
+.gallery-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  font-family: 'Old Standard TT', serif;
+  font-size: 5em;
+  text-shadow: 0px 0px 10px #000000;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin-top: 10vh; }
+
 @media screen and (max-width: 1200px) {
   .welcome-text h1 {
     font-size: 2.5em; }
@@ -196,7 +219,16 @@ p a {
     font-size: 1.5em;
     text-align: center; }
   .proffess {
-    font-size: 0.75em; } }
+    font-size: 0.75em; }
+  .gallery {
+    margin-top: 20vh; }
+  .gallery-subtitle {
+    font-size: 2.5em; }
+  .about-frame {
+    width: 50vw;
+    height: 50vh; }
+  .form-frame {
+    width: 40vw; } }
 
 @media screen and (max-width: 992px) {
   .welcome-text h1 {
@@ -225,8 +257,15 @@ p a {
     position: relative;
     padding-left: 20vw;
     padding-right: 20vw;
-    margin-top: 10vh;
-    z-index: 3; } }
+    margin-top: 20vh;
+    z-index: 3; }
+  .gallery-subtitle {
+    font-size: 2em; }
+  .about-frame {
+    width: 60vw;
+    height: 60vh; }
+  .form-frame {
+    width: 50vw; } }
 
 @media screen and (max-width: 640px) {
   .gallery {
@@ -234,4 +273,11 @@ p a {
     justify-content: center;
     padding-left: 20vw;
     padding-right: 20vw;
-    margin-top: 10vh; } }
+    margin-top: 20vh; }
+  .gallery-subtitle {
+    font-size: 1.5em; }
+  .about-frame {
+    width: 70vw;
+    height: 70vh; }
+  .form-frame {
+    width: 70vw; } }
